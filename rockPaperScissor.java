@@ -1,30 +1,37 @@
 import java.util.Random;
 import java.util.Scanner;
 public class rockPaperScissor {
-    void winDecider(String user, String computer){
-        if(user.equals(computer)){
+    enum Choices{
+        ROCK,
+        SCISSORS,
+        PAPER
+    }
+
+    void winDecider(Choices user, Choices computer){
+        if(user == computer){
             System.out.println("Match draw.");
         }
-        else if(user.equals("Rock") && computer.equals("Paper") 
-            || user.equals("Paper") && computer.equals("Scissor") 
-            || user.equals("Scissor") && computer.equals("Rock")){
-            System.out.println("You lost the match.");
+        else if(user == Choices.ROCK && computer == Choices.PAPER 
+            || user == Choices.PAPER && computer == Choices.SCISSORS
+            || user == Choices.SCISSORS && computer == Choices.ROCK){
+                 System.out.println("You lost the match.");
         }
         else{
             System.out.println("You won the match.");
         }
     }
-    String decisionMapper(int n){
-      if(n == 1){
-        return "Rock";
-      }
-      else if(n==2){
-        return "Scissor";
-      }
-      else if(n==3){
-        return "Paper";
-      }
-      return "error";
+
+    Choices decisionMapper(int n){
+        if(n == 1){
+          return Choices.ROCK;
+        }
+        else if(n==2){
+          return Choices.SCISSORS;
+        }
+        else if(n==3){
+          return Choices.PAPER;
+        }
+        return null;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
