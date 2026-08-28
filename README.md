@@ -24,6 +24,27 @@ A simple **CLI-based Rock Paper Scissors game** built using Java.
 * Enums
 * Exception Handling
 
+
+### 2. Number Guessing Game
+
+A simple **CLI-based Number Guessing Game** built using Java.
+
+**Features:**
+
+* 🎮 Guess a randomly generated number
+* 🔢 Provides feedback on whether the guess is too high or too low
+* 🎯 Continues until the correct number is guessed
+* 🔄 Supports multiple attempts
+* ⚠️ Basic exception handling
+
+**Technologies:**
+
+* Java
+* Random Number Generation
+* Scanner
+* Exception Handling
+
+
 ## 🚀 Running the Project
 
 Clone the repository:
