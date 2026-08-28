@@ -33,12 +33,6 @@ git clone [<repository-url>](https://github.com/sahil-shv/Java-Projects.git)
 cd Java-Projects
 ```
 
-Navigate to the project:
-
-```bash
-cd rockPaperScissor
-```
-
 Compile and run:
 
 ```bash
